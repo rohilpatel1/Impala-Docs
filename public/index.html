@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+  	<div id = "menubar" class = "full-width content-center">
+  		<div id = "navbar">
+  			<a href = "#" class = "nav-item">About</a>
+  		  <a href = "#" class = "nav-item">Download</a>
+  	  	<a href = "#" class = "nav-item">Docs</a>
+  		  <a href = "#" class = "nav-item">Support</a>
+  		</div>
+  		<br/>
+  		<h1 id = "title">Impala</h1>
+  		<span id = "info-title">A <b>Dynamic</b> Programming Language</span>
+    </div>
+    <div class = "row">
+    	<div class = "flex-1">
+    		<p>Impala is a programming language that is very easy to use and light weight, as shown in this demonstration to the side </p>
+    	</div>
+    	<div class = "flex-1">
+    		<span id = "">
+    			make factorial(x oftype number) oftype number {
+    			  if x == 0: send 0;
+    			  
+    			  send (x * factorial(x-1));
+    			}
+    		</span>
+    	</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
