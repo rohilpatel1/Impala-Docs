@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&family=Noto+Sans+JP&display=swap');
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#run {
+  position: absolute;
+  z-index: 6;
+  
+  
+  
+  background: #42f563;
+  top: 5px;
+  left: 70vw;
+  
+  border-radius: 8px;
+  border: none;
+  
+  font-size: 18px;
+  
+  padding: 12px 20px;
+  font-family: Montserrat;
+}
+
+#editor {
+  position: absolute;
+
+  padding: 0;
+  margin: 0;
+
+  left: 0px;
+
+  width: 50vw;
+  height: 100vh;
+}
+
+#terminal {
+  position: absolute;
+
+  padding: 0;
+  margin: 0;
+
+  right: 0;
+
+  width: 50vw;
+  height: 100vh;
+}
+

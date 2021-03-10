@@ -1,0 +1,29 @@
+code.block {
+  display: block;
+	width: 100%;
+
+	white-space: pre-wrap;
+
+	background: rgba(61, 61, 61, 0.033);
+
+	border-radius: 6px;
+
+	padding: 8px;
+
+	font-family: Consolas, "Courier New", monospace !important;
+
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.string {
+	color: rgb(177, 87, 64);
+}
+
+.number {
+	color: rgba(46, 155, 73, 0.884);
+}
+
+.comment {
+	color: grey;
+}
