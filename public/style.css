@@ -45,15 +45,28 @@ body {
 	margin-top: 50px;
 }
 
+#navbar-fixed {
+	position: fixed;
+	z-index: 10000;
+	
+	background: var(--deepblue);
+	padding: 8px;
+	width: 100vw;
+  top: 0;
+  left: 0;
+
+  text-align: center;
+}
+
 #navbar {
 	z-index: 10000;
+  
 	background: var(--deepblue);
-	position: fixed;
-	left: 50%;
 	padding: 8px;
 	width: 100%;
-  transform: translate(-50%, 0);
   top: 0;
+
+  text-align: center;
 }
 
 #navbar.shadow {

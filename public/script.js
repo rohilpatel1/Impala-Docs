@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("scroll", () => {
   const scroll = window.scrollY;
-  const navbar = document.querySelector("#navbar");
+  const navbar = document.querySelector("#navbar-fixed");
 
   if (scroll > 227.516) 
     navbar.classList.add("shadow")

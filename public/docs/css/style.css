@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&family=Noto+Sans+JP&display=swap');
+
+html, body {
+  height: 100vh;
+
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+#sidebar a {
+	color: #1987e0 !important;
+}
+
+#sidebar {
+	padding: 8px;
+	background: #f7f7f7;
+	text-align: center;
+
+  flex-basis: 13vw;
+}
+
+@media screen and (max-width: 1024px) {
+  #sidebar {
+    flex-basis: 16vw;
+  }
+}
+
+#doc-content {
+  flex: 1;
+  font-family: Montserrat !important;
+  
+  padding: 12px;
+  overflow-x: hidden;
+}

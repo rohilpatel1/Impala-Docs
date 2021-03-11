@@ -48,13 +48,24 @@ log("Hi", x);`
   const fitAddon = new FitAddon.FitAddon();
   term.loadAddon(fitAddon);
 
+  let valLength = 0;
+
+  const printables = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=!@#$%^&*()_+~`[]\\{}|\'\":/.>,<? "; // I know regex exists but idc
+
   // Open the terminal in #terminal-container
   term.open(document.getElementById('terminal'));
-  term.write("\r\n\r\n");
   term.onKey((e) => {
     const { key } = e;
+    if (key == "\x7f")
+      valLength--;
+    else if (printables.includes(key))
+      valLength++;
+    else if (key == "\n" || key == "\r") valLength = 0;
 
-    socket.emit("termKey", key);
+    if (key == "\n" || valLength >= 0)
+      socket.emit("termKey", key);
+
+    if (valLength < 0) valLength = 0;
   });
 
   socket.on("termData", data => {
